@@ -2,16 +2,17 @@
 /* css 주석 */
 
 h1 {
-    color: tomato;
-    background-color: blue;
+    color : blue;
+    background-color: #ffffff;
+    
 }
         
-p {
-    color : red;
-    background-color: cyan;
+h2 {
+    color : skyblue;
+    background-color:  #ffffff;
 }
 
-h2 {
-    color : blue;
-    background-color: red;
+p {
+    color : black;
+    background-color: peru
 }
