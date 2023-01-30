@@ -11,22 +11,110 @@
             display: block;
             margin: auto;
         }
+        *{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}
+.menu {
+  width: 800px;
+  overflow: hidden;
+  margin: 150px auto;
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
+.menu > li:hover {
+  background-color: #94a9ff;
+  transition-duration: 0.5s;
+}
+
+.menu > li:hover .submenu {
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;}
     </style>
 </head>
 <body>
+    <ul class="menu">
+        <li>
+          <a href="#">사회부</a>
+          <ul class="submenu">
+            <li><a href="#">이슈</a></li>
+            <li><a href="#">칼럼</a></li>
+            <li><a href="#">문화생활</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">경제부</a>
+          <ul class="submenu">
+            <li><a href="#">이슈</a></li>
+            <li><a href="#">칼럼</a></li>
+            <li><a href="#">주식</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">스포츠</a>
+          <ul class="submenu">
+            <li><a href="#">이슈</a></li>
+            <li><a href="#">칼럼</a></li>
+            <li><a href="#">이적시장</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">연예</a>
+          <ul class="submenu">
+            <li><a href="#">이슈</a></li>
+            <li><a href="#">칼럼</a></li>
+            <li><a href="#">셀럽</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">MENU5</a>
+          <ul class="submenu">
+            <li><a href="#">submenu01</a></li>
+            <li><a href="#">submenu02</a></li>
+            <li><a href="#">submenu03</a></li>
+          </ul>
+        </li>
+      </ul>
     <h1>사회부</h1>
     <img src="사회부.jpeg" alt="사회부" >
     <h2>우리나라 범죄 실태</h2>
+    <div style="text-align: center;">
     <a href="https://newsis.com/view/?id=NISX20230109_0002152717&cID=10201&pID=10200">
         아동 성착취물 첫 실태조사…폭력 피해자 일상회복 지원
     </a>
+    </div>
     <h1>경제부</h1>
     <img src="경제부.jpeg" alt="경제부">
     <h2>지속적인 불황</h2>
-    <p>Facere obcaecati maxime, culpa officia voluptatem impedit ut consequuntur, quam dicta voluptas iure. Unde dolores voluptates officiis porro inventore eum maxime omnis. Corrupti in nostrum, quisquam enim exercitationem unde maiores.</p>
+    <div style="text-align: center;">
+    <a href="https://www.nocutnews.co.kr/news/5880138">중기부, UAE 경제부와 양해각서 체결
+    </a>
+    </div>
     <h1>스포츠 연예</h1>
     <img src="스포츠 연예.jpeg" alt="스포츠 연예">
     <h2>손흥민, 류현진, Jay Park</h2>
-    <p>Quibusdam, deserunt obcaecati id dolorem optio repellendus. Impedit, repellendus? Impedit error consectetur inventore ut nostrum eligendi. Nobis ipsum atque inventore exercitationem sit aliquid asperiores quisquam, laudantium esse quos voluptates perspiciatis.</p>
+    <div style="text-align: center;">
+    <a href="https://www.yna.co.kr/view/AKR20230129003900007?input=1195m">손흥민 멀티골 폭발…토트넘, 프레스턴 3-0 꺾고 FA컵 16강 안착
+    </a>
+    </div>
 </body>
 </html>
