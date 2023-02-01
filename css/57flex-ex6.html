@@ -21,7 +21,17 @@
             width: 77px;
             height: 77px;
         }
-        /* 여기부터 하기 */
+
+        /* 여기부터 하기  */
+        .circle {
+            width: 60px;
+            height: 50px;
+            border: 10px;
+            border-radius: 35px;
+            background-color: lightgrey;
+            text-align: center;
+        }
+
         .second-menu-item {
             background-color: black;
             color: white;
@@ -37,17 +47,25 @@
         }
         
         .side-menu {
-            color: black;
-            width: 200px;
+            /* padding: 10px; */
+            background-color: rgb(121, 199, 121);
+            width: 180px;
+            /* border: 1px black solid; */
         }
         
         .side-menu-item {
-            padding: 5px;
-            border: 1px black solid;
-            justify-content: flex-start;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px black solid;
+            width: 180px;
         }
         .side-menu-item:last-child {
             border-bottom: 2px black solid;
+        }
+
+        .main-content-box {
+            flex: 1;
+            padding: 10px;
         }
 
         .ad-item {
@@ -60,6 +78,9 @@
         .ad-item:last-child {
             border-bottom: 4px black solid;
         }
+        i {
+            padding: 3px;
+        }
         </style>
 </head>
 <body>
@@ -70,28 +91,28 @@
             <img src="헐크.jpeg" alt="">
         </div>
         <div class="top-menu-item menu-item">
-            Tutorials
+            Tutorials<i class="fa-solid fa-caret-down"></i>
         </div>
         <div class="top-menu-item menu-item">
-            References
+            References<i class="fa-solid fa-caret-down"></i>
         </div>
         <div class="top-menu-item menu-item">
-            Exercises
+            Exercises<i class="fa-solid fa-caret-down"></i>
         </div>
         <div class="top-menu-item menu-item mr-auto">
-            Sign up
+            Sign up<i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="top-menu-item menu-item">
-            Lorem.
+        <div class="top-menu-item menu-item circle">
+            Pro
         </div>
-        <div class="top-menu-item menu-item">
-            Quae!
+        <div class="top-menu-item menu-item circle">
+            Get Certified
         </div>
-        <div class="top-menu-item menu-item">
-            Nihil.
+        <div class="top-menu-item menu-item circle">
+            Create Website
         </div>
-        <div class="top-menu-item menu-item">
-            Dolore!
+        <div class="top-menu-item menu-item circle">
+            Log in
         </div>
     </div>
     <!-- 두번째 메뉴 -->
@@ -124,14 +145,8 @@
         <div class="second-menu-item menu-item">
             BOOTSTRAP
         </div>
-        <div class="second-menu-item menu-item">
-            HOW TO
-        </div>
-        <div class="second-menu-item menu-item">
-            Fugit!
-        </div>
         <div class="second-menu-item menu-item mr-auto">
-            Lorem.
+            HOW TO
         </div>
         <div class="second-menu-item menu-item">
             Lorem.
@@ -309,6 +324,9 @@
             </div>
             <div class="box">
                 <div class="ad-item">ad3</div>
+            </div>
+            <div class="box">
+                <div class="ad-item">ad4</div>
             </div>
         </div>
     </div>
