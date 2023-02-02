@@ -7,7 +7,17 @@
         .flexbox {
             display: flex;
         }
-        
+        /* 여기부터 */
+        .green-h:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .fa-solid:hover {
+            background-color: green;
+            color: white;
+        }
+
         .menu-item {
             font-size: 18px;
             font-weight: bold;
@@ -16,20 +26,60 @@
             display: flex;
             align-items: center;
         }
+
+        .second-menu-item:hover {
+            background-color: white;
+            color: black;
+        }
         
         .top-menu-item > img {
             width: 77px;
             height: 77px;
         }
 
-        /* 여기부터 하기  */
         .circle {
-            width: 60px;
-            height: 50px;
-            border: 10px;
-            border-radius: 35px;
-            background-color: lightgrey;
-            text-align: center;
+            border-radius: 30px;
+            justify-content: center;
+        }
+        
+        .circle:hover {
+            background-color: white;
+            color: black;
+        }
+        /* circle 이라는 클래스는 div의 첫번째 자손이 아님 */
+
+        .bg-black {
+            width: 50px;
+            height: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .bg-pink {
+            width: 160px;
+            height: 20px;
+            background-color: pink;
+            color: black;
+        }
+
+        .bg-yellow {
+            width: 160px;
+            height: 20px;
+            background-color: yellow;
+            color: black;
+        }
+
+        .bg-green {
+            width: 140px;
+            height: 20px;
+            background-color: green;
+            color: white;
+        }
+
+        .second-menu {
+            background-color: black;
+            position: sticky;
+            top: 0px;
         }
 
         .second-menu-item {
@@ -42,9 +92,6 @@
             margin-right: auto;
         }
         
-        .second-menu {
-            background-color: black;
-        }
         
         .side-menu {
             /* padding: 10px; */
@@ -59,6 +106,11 @@
             border-top: 1px black solid;
             width: 180px;
         }
+
+        .side-menu-item:hover {
+            background-color: rgb(141, 185, 141);
+        }
+
         .side-menu-item:last-child {
             border-bottom: 2px black solid;
         }
@@ -90,28 +142,28 @@
         <div class="top-menu-item menu-item">
             <img src="헐크.jpeg" alt="">
         </div>
-        <div class="top-menu-item menu-item">
+        <div class="top-menu-item menu-item green-h">
             Tutorials<i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="top-menu-item menu-item">
+        <div class="top-menu-item menu-item green-h">
             References<i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="top-menu-item menu-item">
+        <div class="top-menu-item menu-item green-h">
             Exercises<i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="top-menu-item menu-item mr-auto">
+        <div class="top-menu-item menu-item mr-auto green-h">
             Sign up<i class="fa-solid fa-caret-down"></i>
         </div>
-        <div class="top-menu-item menu-item circle">
+        <div class="top-menu-item menu-item circle bg-black">
             Pro
         </div>
-        <div class="top-menu-item menu-item circle">
+        <div class="top-menu-item menu-item circle bg-pink">
             Get Certified
         </div>
-        <div class="top-menu-item menu-item circle">
+        <div class="top-menu-item menu-item circle bg-yellow">
             Create Website
         </div>
-        <div class="top-menu-item menu-item circle">
+        <div class="top-menu-item menu-item circle bg-green">
             Log in
         </div>
     </div>
