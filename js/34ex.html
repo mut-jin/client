@@ -9,25 +9,31 @@
     </style>
 </head>
 <body>
-    <div class="q&a">
-        <div class="header">
-            <div class="top">Q&A</div>
-        </div>
-        <div>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-        </div>
-    </div>
+    
+    <input type="text"> <button onclick="guess()">입력</button>
+    <p id="result"></p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
+    // 컴퓨터가 1~100사이의 수 선택
+    let com = parseInt(Math.random() * 100) + 1;
+
+    function guess() {
+        let user = document.querySelector("input").value;
+        user = Number(user);
+
+        let message = ""
+
+        if (user < com) {
+            message = "더 큰 수를 입력해보세요."
+        } else if (user > com) {
+            message = "더 작은 수를 입력해보세요."
+        } else {
+            message = "😜정답입니다!!!"
+        }
+
+        document.querySelector("#result").textContent = message;
+    }
+
     </script>
 </body>
 </html>

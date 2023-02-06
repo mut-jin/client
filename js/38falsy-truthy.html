@@ -9,25 +9,51 @@
     </style>
 </head>
 <body>
-    <div class="q&a">
-        <div class="header">
-            <div class="top">Q&A</div>
-        </div>
-        <div>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-        </div>
-    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
+    // falsy (거짓 같은 값, false로 취급되는 값)
+    // 0, "", null, undefined, NaN
+
+    // truthy (참 같은 값, true로 취급되는 값)
+    // 위의 falsy 값외의 모든 값
+
+    let a = 0; // 0이니까 falsy
+
+    if (a) {
+        console.log("a는 참");
+    } else {
+        console.log("a는 거짓");
+    }
+
+    let b = 1; // 1 truthy
+
+    if (b) {
+        console.log("b는 참");
+    } else {
+        console.log("b는 거짓");
+    }
+
+    let c = "" // 없음 falsy
+    if (c) {
+        console.log("c는 참");
+    } else {
+        console.log("c는 거짓");
+    }
+
+    let d = "hello" // 문자열 있음 truthy
+    if(d) {
+        console.log("d는 참");
+    } else {
+        console.log("d는 거짓");
+    }
+
+    let e = " " // 띄어쓰기 있음 truthy
+    if(e) {
+        console.log("e는 참");
+    } else {
+        console.log("e는 거짓");
+    }
     </script>
 </body>
 </html>

@@ -9,25 +9,16 @@
     </style>
 </head>
 <body>
-    <div class="q&a">
-        <div class="header">
-            <div class="top">Q&A</div>
-        </div>
-        <div>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-            <hr>
-            <div class="content-item">contents</div>
-        </div>
-    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    let age = prompt("나이를 입력해주세요", 0)
+
+    age = +age; // number로 변환
     
+    if (age >= 20) {
+        console.log("어른입니다.");
+    }
     </script>
 </body>
 </html>
