@@ -12,27 +12,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    let num = prompt("수를 입력하세요.", 0)
+    console.log("이전 명령문들...");
 
-    num = +num; // Number로 변환
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
 
-    if ((num % 2) === 1) {
-        console.log("홀수 입니다.");
-    } else {
-        console.log("짝수 입니다.");
+        // break; : 반복을 끝내는 명령문
+        break;
     }
 
-    // let num = prompt("수를 입력해주세요.", 0)
-    // num = +num;
-
-    // remain = num % 2;
-    
-    // if (remain === 0) {
-        // console.log("짝수입니다.");
-    // } else {
-        // console.log("홀수입니다.");
-    // }
+    console.log("다음 명령문들...");
     </script>
 </body>
 </html>

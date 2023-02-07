@@ -12,27 +12,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    let num = prompt("수를 입력하세요.", 0)
 
-    num = +num; // Number로 변환
+    // 43번 switch를 if로 바꿔서 표현
+    let grade = prompt("학점을 입력하세요.", "A");
 
-    if ((num % 2) === 1) {
-        console.log("홀수 입니다.");
+    if (grade === "A" || grade === "a") {
+        console.log("90점 이상입니다.");
+    } else if (grade === "B" || grade === "b") {
+        console.log("80점 이상입니다.");
+    } else if (grade === "C" || grade === "c") {
+        console.log("70점 이상입니다.");
     } else {
-        console.log("짝수 입니다.");
+        console.log("다시 입력해주세요.");
     }
-
-    // let num = prompt("수를 입력해주세요.", 0)
-    // num = +num;
-
-    // remain = num % 2;
-    
-    // if (remain === 0) {
-        // console.log("짝수입니다.");
-    // } else {
-        // console.log("홀수입니다.");
-    // }
     </script>
 </body>
 </html>

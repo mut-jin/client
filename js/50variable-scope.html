@@ -12,27 +12,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    
-    let num = prompt("수를 입력하세요.", 0)
+    // 변수의 scope
+    // let, const 의 scope은
+    // 선언된 코드 블럭 내
+    // ------> 즉, 코드 블럭 내에서만 사용 가능
 
-    num = +num; // Number로 변환
+    let a = 5;
 
-    if ((num % 2) === 1) {
-        console.log("홀수 입니다.");
-    } else {
-        console.log("짝수 입니다.");
+    if (true) {
+        let b = 10;
+
+        console.log("a", a); // 출력됨
+        console.log("b", b); // 선언된 코드블럭 안에서만 사용가능
     }
 
-    // let num = prompt("수를 입력해주세요.", 0)
-    // num = +num;
-
-    // remain = num % 2;
-    
-    // if (remain === 0) {
-        // console.log("짝수입니다.");
-    // } else {
-        // console.log("홀수입니다.");
-    // }
+    console.log("a", a); // 출력됨
+    console.log("b", b); // 출력안됨
     </script>
 </body>
 </html>
