@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,24 +8,26 @@
     <style>
     </style>
 </head>
-
 <body>
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
+    <h1>
+        Lorem.
+    </h1>
+    <p style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti possimus incidunt dicta laboriosam sapiente, quo maxime illum officiis inventore architecto sit aspernatur in odit libero voluptatem magnam tenetur pariatur rerum?</p>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#input1").on("keyup", function(event) {
-            if (event.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
+        // h1요소에 마우스 포인터 들어가면
+        // p요소 보이게
+        // h1 요소에서 마우스 포인터 떠나면
+        // p 요소가 숨겨지게
 
-                this.value = "";
-            }
+        $("h1").hover(function() {
+            $("p").slideDown("fast");
+        }).mouseleave(function() {
+            $("p").slideUp("fast");
         })
-
+    
     </script>
 </body>
-
 </html>

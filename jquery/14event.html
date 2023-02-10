@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,24 +8,25 @@
     <style>
     </style>
 </head>
-
 <body>
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
+    <!-- button*2#button$+h1>lorem -->
+    <button id="button1">숨기기</button>
+    <button id="button2">보이기</button>
+    <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minus est magni amet. Ex unde, nisi adipisci praesentium porro qui dignissimos laborum itaque suscipit reiciendis numquam, aliquam ea minus obcaecati!
+    </h1>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#input1").on("keyup", function(event) {
-            if (event.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
+    $("#button1").on("click", function() {
+        $("h1").slideUp();
+    })
 
-                this.value = "";
-            }
-        })
-
+    $("#button2").on("click", function() {
+        $("h1").slideDown();
+    })
+    
     </script>
 </body>
-
 </html>

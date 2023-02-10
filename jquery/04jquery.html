@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,24 +8,39 @@
     <style>
     </style>
 </head>
-
 <body>
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
+    <!-- h1#head$*3>lorem1^p#para$*3>lorem -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Culpa.
+    </h1>
+    <h1 id="head3">
+        Culpa!
+    </h1>
+    <p id="para1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nostrum ex tempora atque iusto molestiae amet animi veritatis non asperiores, libero aperiam error consequuntur enim est culpa magnam fugiat. Non!
+    </p>
+    <p id="para2">
+        Qui, saepe? Pariatur molestias tempora nemo quia accusantium nam in optio soluta natus veniam quibusdam, omnis possimus ea dignissimos error itaque maxime hic quisquam ex accusamus expedita perspiciatis consequatur placeat.
+    </p>
+    <p id="para3">
+        Aliquam, corporis ipsum? Reiciendis voluptatem modi eveniet, dicta voluptas velit, officia numquam aperiam mollitia at explicabo cumque amet quam obcaecati enim illum laudantium, sint quo quisquam nam odio aliquam dolorem.
+    </p>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#input1").on("keyup", function(event) {
-            if (event.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
-
-                this.value = "";
-            }
-        })
+    $("#head1").hide(3000);
+    $("p").hide(5000);
+    
+    // vanilla js
+    let paras = document.querySelectorAll("p");
+    for (let i = 0; i < paras.length; i++); {
+        prars[i].style = {dsiplay:"none"};
+    }
 
     </script>
 </body>
-
 </html>

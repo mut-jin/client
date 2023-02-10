@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,24 +8,29 @@
     <style>
     </style>
 </head>
-
 <body>
-    <input type="text" id="input1">
-    <ul id="list1"></ul>
+    <h1>
+        Lorem.
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor incidunt aspernatur quo fugit voluptatum, dicta explicabo repellat velit nostrum iste quidem repellendus fuga ducimus dignissimos? Culpa aliquid est fuga quis.
+    </p>
+    <h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam blanditiis incidunt optio cumque fugiat nostrum eius suscipit ad neque, quaerat beatae quae possimus deleniti tenetur cum et quia similique corporis!
+    </h2>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $("#input1").on("keyup", function(event) {
-            if (event.key === "Enter") {
-                let li = document.createElement("li");
-                li.textContent = this.value;
-                document.querySelector("#list1").append(li);
-
-                this.value = "";
-            }
-        })
-
+    $("h1").on("click", function() {
+        console.log("h1 클릭됨");
+    });
+    $("p").on("click", function() {
+        console.log("p 클릭됨");
+    })
+    $("h2").on("click", function() {
+        console.log(("h2 클릭됨"));
+    })
     </script>
 </body>
-
 </html>
