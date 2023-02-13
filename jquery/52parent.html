@@ -21,11 +21,11 @@
                 let liElem = $("<li>");
                 liElem.text($(this).val());
                 
-
                 let removeButton = $("<button>X</button>");
                 removeButton.click(function() {
                     $(this).parent().remove();
                 });
+
                 liElem.append(removeButton);
                 
                 $("#list1").append(liElem);
